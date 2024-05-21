@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
+/* ***************** Scroll progressive ***************** */
 html {
     scroll-behavior: smooth;
 }
@@ -96,6 +97,7 @@ header button {
     height: 300px;
     margin-top: 5px;
 }
+
 /* ***************** FOOTER ***************** */
 footer {
     margin-top: 40px;
@@ -129,24 +131,28 @@ footer #contact {
     color: rgb(181, 181, 181);
 }
 
-/* Média query */
+/* ***************** Média query ***************** */
 @media screen and (max-width:680px) {
     nav .onglets {
         margin-left: 0px;
         margin-bottom: 20px;
     }
-    .main .card{
+
+    .main .card {
         margin: 10px;
     }
-    .main .content .card .right img{
+
+    .main .content .card .right img {
         width: 100%;
         height: 200px;
-margin-top: 0px;
+        margin-top: 0px;
     }
+
     .main .content .card {
         display: block;
     }
-    footer{
+
+    footer {
         padding: 30px;
     }
 }
