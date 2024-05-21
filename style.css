@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ***************** NAV ***************** */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +39,7 @@ nav .onglets a {
     padding-bottom: 5px;
 }
 
-/* HEADER */
+/* ***************** HEADER ***************** */
 header {
     display: flex;
     flex-direction: column;
@@ -63,37 +64,89 @@ header button {
     outline: none;
     cursor: pointer;
 }
-/* SECTION PRINCIAPLE */
-.main{
+
+/* ***************** SECTION PRINCIAPLE ***************** */
+.main {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .main .content .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
 }
-.main .content .card .left{
+
+.main .content .card .left {
     flex: 0 0 30%;
     padding: 20px;
     background-color: black;
     color: white;
 }
-.main .content .card.right{
+
+.main .content .card.right {
     flex: 0 0 70%;
 }
-.main .content .card .right img{
+
+.main .content .card .right img {
     width: 400px;
     height: 300px;
     margin-top: 5px;
 }
+/* ***************** FOOTER ***************** */
+footer {
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 100px;
+}
+
+footer h3 {
+    font-family: 'playfair Display', sans-serif;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+footer .services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .service {
+    margin-right: 30px;
+
+}
+
+footer .services .service p {
+    max-width: 300px;
+}
+
+footer #contact {
+    color: rgb(181, 181, 181);
+}
+
 /* Média query */
 @media screen and (max-width:680px) {
     nav .onglets {
         margin-left: 0px;
         margin-bottom: 20px;
+    }
+    .main .card{
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        width: 100%;
+        height: 200px;
+margin-top: 0px;
+    }
+    .main .content .card {
+        display: block;
+    }
+    footer{
+        padding: 30px;
     }
 }
